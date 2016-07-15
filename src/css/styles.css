@@ -6,17 +6,28 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+body {
+  color: #103b58; }
+  body .section-section, body footer {
+    text-align: center; }
+
+h2, h3 {
+  text-align: center; }
+
 h1 {
-  font-size: 1em; }
+  font-size: 1.3em; }
 
 h2 {
   font-size: 1em; }
 
-p {
+h3 {
+  font-size: 0.7em; }
+
+ul, p {
   font-size: 0.5em; }
 
 header {
-  background: url("../images/image1.jpg") no-repeat center fixed;
+  background: url("../images/image1.jpg") no-repeat center center fixed;
   background-size: cover;
   height: 37em;
   color: white; }
@@ -25,8 +36,30 @@ header {
     float: right;
     margin-top: 15em; }
 
-.second-section img {
-  width: 75%; }
+nav {
+  box-shadow: 2px 1px 2px 0px #ccc; }
+  nav h2 {
+    display: inline-block;
+    margin: 0; }
+  nav h2, nav span {
+    padding: 0.5em 1em; }
+  nav .fa {
+    float: right; }
+
+.second-section {
+  margin: 3em 0; }
+  .second-section img {
+    width: 75%;
+    display: block;
+    margin: 0 auto; }
+
+button {
+  background-color: transparent;
+  display: inline-block;
+  margin-top: 0.5em;
+  font-size: 0.1em;
+  color: white;
+  border: 1.8px solid white; }
 
 .Shape {
   border-width: 2px;

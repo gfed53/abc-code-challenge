@@ -1,11 +1,27 @@
+body {
+	color: #103b58;
+	.section-section, footer {
+		text-align: center;
+	}
+}
+
+h2, h3 {
+	text-align: center;
+}
+
 h1 {
-	font-size: 1em;
+	font-size: 1.3em;
 }
 
 h2 {
 	font-size: 1em;
 }
 
-p {
+h3 {
+	font-size: 0.7em;
+}
+
+ul, p {
 	font-size: 0.5em;
 }
+
