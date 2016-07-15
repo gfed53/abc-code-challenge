@@ -1,8 +1,17 @@
 body {
 	color: #103b58;
+	font-family: "Karla", sans-serif;
 	.section-section, footer {
 		text-align: center;
 	}
+}
+
+h1, h2, h3 {
+	font-weight: 400;
+}
+
+.bold {
+	font-weight: 700;
 }
 
 h2, h3 {
@@ -10,11 +19,11 @@ h2, h3 {
 }
 
 h1 {
-	font-size: 1.3em;
+	font-size: 1.2em;
 }
 
 h2 {
-	font-size: 1em;
+	font-size: 0.9em;
 }
 
 h3 {

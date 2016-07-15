@@ -7,18 +7,25 @@ html {
   box-sizing: inherit; }
 
 body {
-  color: #103b58; }
+  color: #103b58;
+  font-family: "Karla", sans-serif; }
   body .section-section, body footer {
     text-align: center; }
+
+h1, h2, h3 {
+  font-weight: 400; }
+
+.bold {
+  font-weight: 700; }
 
 h2, h3 {
   text-align: center; }
 
 h1 {
-  font-size: 1.3em; }
+  font-size: 1.2em; }
 
 h2 {
-  font-size: 1em; }
+  font-size: 0.9em; }
 
 h3 {
   font-size: 0.7em; }
@@ -27,7 +34,7 @@ ul, p {
   font-size: 0.5em; }
 
 header {
-  background: url("../images/image1.jpg") no-repeat center center fixed;
+  background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url("../images/image1.jpg") no-repeat center center fixed;
   background-size: cover;
   height: 37em;
   color: white; }
@@ -45,6 +52,13 @@ nav {
     padding: 0.5em 1em; }
   nav .fa {
     float: right; }
+
+.fixed {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
 
 .second-section {
   margin: 3em 0; }

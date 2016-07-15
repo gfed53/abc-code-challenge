@@ -1,3 +1,10 @@
 $(function(){
-	console.log("asdjkl");
-})
+	console.log($('header').css('height'));
+	var headerHeight = $('header').css('height');
+
+
+
+	$(document).on('scroll', function(){
+
+	});
+});
