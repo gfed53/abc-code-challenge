@@ -37,7 +37,7 @@ ul, p {
 
 header {
   position: relative;
-  background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url("../images/image1.jpg") no-repeat center center fixed;
+  background: linear-gradient(rgba(56, 48, 23, 0.6), rgba(20, 26, 105, 0.82)), url("../images/image1.jpg") no-repeat center center fixed;
   background-size: cover;
   color: white; }
   header .header-content {
@@ -62,7 +62,8 @@ nav {
   left: 0;
   right: 0;
   height: 2em;
-  background-color: white; }
+  background-color: white;
+  z-index: 9999; }
 
 .second-section {
   margin: 3em 0; }
@@ -70,6 +71,14 @@ nav {
     width: 75%;
     display: block;
     margin: 0 auto; }
+
+@media screen and (min-width: 550px) {
+  .second-section {
+    margin: 5em 0; } }
+
+@media screen and (min-width: 1024px) {
+  .second-section {
+    margin: 8em 0; } }
 
 button {
   background-color: transparent;
@@ -87,7 +96,7 @@ button {
   transform: translateY(43%) translateX(8%) rotate(-19deg);
   transform-origin: 0% 0%;
   position: absolute;
-  z-index: 9999; }
+  z-index: 999; }
 
 .arrow-container {
   position: absolute;

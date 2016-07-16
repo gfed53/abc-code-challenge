@@ -6,3 +6,15 @@
 		margin: 0 auto;
 	}
 }
+
+@media screen and ('min-width: 550px'){
+	.second-section {
+		margin: 5em 0;
+	}
+}
+
+@media screen and ('min-width: 1024px'){
+	.second-section {
+		margin: 8em 0;
+	}
+}
