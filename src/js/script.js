@@ -6,8 +6,14 @@ $(function(){
 	console.log(navHeight);
 	headerHeight = $(window).height()-navHeight;
 	console.log(headerHeight);
+	var marginTop;
 
-	var marginTop = (headerHeight)/2.5;
+	if($(window).width() <= 338){
+		marginTop = (headerHeight)/5;
+	} else {
+		marginTop = (headerHeight)/3;
+	}
+
 	$('header').height(headerHeight);
 	$('.header-content').css('margin-top', marginTop+'px');
 

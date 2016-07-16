@@ -36,9 +36,9 @@ ul, p {
   font-size: 0.5em; }
 
 header {
+  position: relative;
   background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url("../images/image1.jpg") no-repeat center center fixed;
   background-size: cover;
-  height: 37em;
   color: white; }
   header .header-content {
     max-width: 50%;
@@ -89,3 +89,10 @@ button {
   width: 118px;
   height: 294px;
   z-index: 24; }
+
+.arrow-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0.2em; }
