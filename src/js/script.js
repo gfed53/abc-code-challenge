@@ -1,42 +1,53 @@
 $(function(){
-	//For Navbar
-	// console.log($('header').css('height'));
-	var headerHeight = $('header').height();
-	// console.log(headerHeight);
-	var navHeight = $('nav').height();
-	// console.log(navHeight);
-	headerHeight = $(window).height()-navHeight;
-	// console.log(headerHeight);
-	var marginTop;
+	var headerHeight,
+	navHeight,
+	marginTop,
+	imgWidth,
+	imgHeight
+	
+	function init(){
+		//For Navbar
+		// console.log($('header').css('height'));
+		headerHeight = $('header').height();
+		// console.log(headerHeight);
+		navHeight = $('nav').height();
+		// console.log(navHeight);
+		headerHeight = $(window).height()-navHeight;
+		// console.log(headerHeight);
 
-	if($(window).width() <= 338){
-		marginTop = (headerHeight)/5;
-	} else {
-		marginTop = (headerHeight)/3;
+		if($(window).width() <= 338){
+			marginTop = (headerHeight)/5;
+		} else {
+			marginTop = (headerHeight)/3;
+		}
+
+		$('header').height(headerHeight);
+		$('.header-content').css('margin-top', marginTop+'px');
+
+		//For Lines
+		console.log($('img').width());
+		console.log($('img').height());
+		imgWidth = $('img').width();
+		imgHeight = $('img').height();
+		// Image
+		// width: 478.5px;
+		// height: 239.8125px;
+
+		// Box
+		    // width: 500px;
+		    // height: 175px;
+		console.log(500/478.5); //width
+		console.log(175/239.8125); //height
+		console.log(35/478.5) //transY
+		console.log(71/478.5); //transX
+		$('.box-ends').css({'width': (imgWidth*1.04)+'px', 'height': (imgHeight*0.729)+'px', 'transform': 'translateY('+(imgWidth*0.250)+'px) translateX('+(imgWidth*0.11)+'px) rotate(-20deg)' });
 	}
 
-	$('header').height(headerHeight);
-	$('.header-content').css('margin-top', marginTop+'px');
+	init();
 
-	//For Lines
-	console.log($('img').width());
-	console.log($('img').height());
-	var imgWidth = $('img').width(),
-	imgHeight = $('img').height();
-	// Image
-	// width: 478.5px;
-	// height: 239.8125px;
-
-	// Box
-	    // width: 500px;
-	    // height: 175px;
-	console.log(500/478.5); //width
-	console.log(175/239.8125); //height
-	console.log(35/478.5) //transY
-	console.log(71/478.5); //transX
-	$('.box-ends').css({'width': (imgWidth*1.04)+'px', 'height': (imgHeight*0.729)+'px', 'transform': 'translateY('+(imgWidth*0.250)+'px) translateX('+(imgWidth*0.11)+'px) rotate(-20deg)' });
-
-
+	$(window).on('resize', function(){
+		init();
+	});
 
 
 	$(document).on('scroll', function(){
