@@ -1,11 +1,12 @@
 $(function(){
-	console.log($('header').css('height'));
+	//For Navbar
+	// console.log($('header').css('height'));
 	var headerHeight = $('header').height();
-	console.log(headerHeight);
+	// console.log(headerHeight);
 	var navHeight = $('nav').height();
-	console.log(navHeight);
+	// console.log(navHeight);
 	headerHeight = $(window).height()-navHeight;
-	console.log(headerHeight);
+	// console.log(headerHeight);
 	var marginTop;
 
 	if($(window).width() <= 338){
@@ -17,12 +18,31 @@ $(function(){
 	$('header').height(headerHeight);
 	$('.header-content').css('margin-top', marginTop+'px');
 
+	//For Lines
+	console.log($('img').width());
+	console.log($('img').height());
+	var imgWidth = $('img').width(),
+	imgHeight = $('img').height();
+	// Image
+	// width: 478.5px;
+	// height: 239.8125px;
+
+	// Box
+	    // width: 500px;
+	    // height: 175px;
+	console.log(500/478.5); //width
+	console.log(175/239.8125); //height
+	console.log(35/478.5) //transY
+	console.log(71/478.5); //transX
+	$('.box-ends').css({'width': (imgWidth*1.04)+'px', 'height': (imgHeight*0.729)+'px', 'transform': 'translateY('+(imgWidth*0.250)+'px) translateX('+(imgWidth*0.11)+'px) rotate(-20deg)' });
+
+
+
 
 	$(document).on('scroll', function(){
 		// console.log($(this).scrollTop());
 		var scrollTop = $(this).scrollTop();
 		if(scrollTop >= headerHeight){
-			console.log('should add class');
 			$('nav').addClass('fixed');
 			$('.grid').css('top', '2em');
 		} else if($('nav').hasClass('fixed')) {
