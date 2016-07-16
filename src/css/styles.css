@@ -65,19 +65,19 @@ nav {
   background-color: white;
   z-index: 9999; }
 
-.second-section {
+#second-section {
   margin: 3em 0; }
-  .second-section img {
+  #second-section img {
     width: 75%;
     display: block;
     margin: 0 auto; }
 
 @media screen and (min-width: 550px) {
-  .second-section {
+  #second-section {
     margin: 5em 0; } }
 
 @media screen and (min-width: 1024px) {
-  .second-section {
+  #second-section {
     margin: 8em 0; } }
 
 button {
@@ -104,3 +104,5 @@ button {
   width: 100%;
   text-align: center;
   padding: 0.2em; }
+  .arrow-container .scroll-arrow {
+    color: white; }
