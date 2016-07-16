@@ -2,6 +2,9 @@ html {
 	box-sizing: border-box;
 	body {
 		margin: 0;
+		.grid {
+			position: relative;
+		}
 	}
 }
 

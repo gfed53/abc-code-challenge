@@ -2,6 +2,8 @@ html {
   box-sizing: border-box; }
   html body {
     margin: 0; }
+    html body .grid {
+      position: relative; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
@@ -58,7 +60,9 @@ nav {
   top: 0;
   bottom: 0;
   left: 0;
-  right: 0; }
+  right: 0;
+  height: 2em;
+  background-color: white; }
 
 .second-section {
   margin: 3em 0; }
