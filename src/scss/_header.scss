@@ -7,7 +7,7 @@ header {
 	.header-content {
 		max-width: 58%;
 		float: right;
-		margin-top: 15em;
+		margin: 0 1em;
 	}
 }
 
@@ -20,5 +20,31 @@ header {
 		}
 	}
 }
+
+@media screen and ($mobile1){
+	header {
+		.header-content {
+			max-width: 39%;
+		}
+	}
+}
+
+@media screen and ($tablet1){
+	header {
+		.header-content {
+			max-width: 35%;
+		}
+	}
+}
+
+@media screen and ($desktop){
+	header {
+		.header-content {
+			max-width: 28%;
+		}
+	}
+}
+
+
 
 

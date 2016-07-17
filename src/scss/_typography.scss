@@ -44,6 +44,20 @@ ul, p {
 	h1 {
 		font-size: 1.7em;
 	}
+	#second-section {
+		h2 {
+			font-size: 1.2em;
+		}
+	}
+}
+
+@media screen and ($desktop){
+	h1 {
+		font-size: 2em;
+	}
+	ul, p {
+		font-size: 0.7em;
+	}
 }
 
 

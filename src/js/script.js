@@ -18,7 +18,7 @@ $(function(){
 		if($(window).width() <= 338){
 			marginTop = (headerHeight)/5;
 		} else {
-			marginTop = (headerHeight)/3;
+			marginTop = (headerHeight)/4;
 		}
 
 		$('header').height(headerHeight);
