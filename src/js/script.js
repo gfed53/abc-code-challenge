@@ -9,11 +9,11 @@ $(function(){
 		//For Navbar
 		// console.log($('header').css('height'));
 		headerHeight = $('header').height();
-		// console.log(headerHeight);
+		console.log(headerHeight);
 		navHeight = $('nav').height();
-		// console.log(navHeight);
+		console.log(navHeight);
 		headerHeight = $(window).height()-navHeight;
-		// console.log(headerHeight);
+		console.log(headerHeight);
 
 		if($(window).width() <= 338){
 			marginTop = (headerHeight)/5;
@@ -25,8 +25,8 @@ $(function(){
 		$('.header-content').css('margin-top', marginTop+'px');
 
 		//For Lines
-		console.log($('img').width());
-		console.log($('img').height());
+		// console.log($('img').width());
+		// console.log($('img').height());
 		imgWidth = $('img').width();
 		imgHeight = $('img').height();
 		// Image
@@ -36,10 +36,10 @@ $(function(){
 		// Box
 		    // width: 500px;
 		    // height: 175px;
-		console.log(500/478.5); //width
-		console.log(175/239.8125); //height
-		console.log(35/478.5) //transY
-		console.log(71/478.5); //transX
+		// console.log(500/478.5); //width
+		// console.log(175/239.8125); //height
+		// console.log(35/478.5) //transY
+		// console.log(71/478.5); //transX
 		$('.box-ends').css({'width': (imgWidth*1.04)+'px', 'height': (imgHeight*0.729)+'px', 'transform': 'translateY('+(imgWidth*0.250)+'px) translateX('+(imgWidth*0.11)+'px) rotate(-20deg)' });
 	}
 

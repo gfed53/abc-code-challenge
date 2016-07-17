@@ -34,3 +34,23 @@ ul, p {
 	font-size: 0.5em;
 }
 
+@media screen and ($mobile1){
+	h1 {
+		font-size: 1.4em;
+	}
+}
+
+@media screen and ($tablet1){
+	h1 {
+		font-size: 1.7em;
+	}
+}
+
+
+
+
+
+
+
+
+

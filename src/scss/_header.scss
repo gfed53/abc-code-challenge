@@ -5,9 +5,19 @@ header {
 	// height: 37em;
 	color: white;
 	.header-content {
-		max-width: 50%;
+		max-width: 58%;
 		float: right;
 		margin-top: 15em;
+	}
+}
+
+@media screen and ($mobile0){
+	header {
+		.header-content {
+			max-width: 50%;
+			// float: right;
+			// margin-top: 15em;
+		}
 	}
 }
 

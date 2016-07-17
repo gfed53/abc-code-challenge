@@ -5,4 +5,10 @@ button {
 	font-size: 0.1em;
 	color: white;
 	border: 1.8px solid white;
+	transition: 500ms linear all;
+}
+
+button:hover {
+	background-color: white;
+	color: black;
 }
