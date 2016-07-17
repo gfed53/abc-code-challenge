@@ -67,6 +67,10 @@
 	.scroll-arrow {
 		color: white;
 		cursor: pointer;
+		transition: 500ms linear all;
+	}
+	.scroll-arrow:hover {
+		font-size: 1.5em;
 	}
 }
 

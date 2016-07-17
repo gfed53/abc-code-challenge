@@ -152,4 +152,7 @@ button:hover {
   padding: 0.2em; }
   .arrow-container .scroll-arrow {
     color: white;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: 500ms linear all; }
+  .arrow-container .scroll-arrow:hover {
+    font-size: 1.5em; }

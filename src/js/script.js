@@ -3,17 +3,26 @@ $(function(){
 	navHeight,
 	marginTop,
 	imgWidth,
-	imgHeight
+	imgHeight,
+	deg = -20,
+	borderWidth = 1,
+	imgWidthMult = 1.04,
+	imgHeightMult = 0.729,
+	yMult = 0.250,
+	xMult = 0.11,
+	scroll = $(window).scrollTop();
+	// colors = ['red', 'blue', 'green', 'yellow'],
+	// count = 0;
 	
 	function init(){
 		//For Navbar
 		// console.log($('header').css('height'));
 		headerHeight = $('header').height();
-		console.log(headerHeight);
+		// console.log(headerHeight);
 		navHeight = $('nav').height();
-		console.log(navHeight);
+		// console.log(navHeight);
 		headerHeight = $(window).height()-navHeight;
-		console.log(headerHeight);
+		// console.log(headerHeight);
 
 		if($(window).width() <= 338){
 			marginTop = (headerHeight)/5;
@@ -40,7 +49,7 @@ $(function(){
 		// console.log(175/239.8125); //height
 		// console.log(35/478.5) //transY
 		// console.log(71/478.5); //transX
-		$('.box-ends').css({'width': (imgWidth*1.04)+'px', 'height': (imgHeight*0.729)+'px', 'transform': 'translateY('+(imgWidth*0.250)+'px) translateX('+(imgWidth*0.11)+'px) rotate(-20deg)' });
+		$('.box-ends').css({'width': (imgWidth*imgWidthMult)+'px', 'height': (imgHeight*imgHeightMult)+'px', 'transform': 'translateY('+(imgWidth*yMult)+'px) translateX('+(imgWidth*xMult)+'px) rotate('+deg+'deg)' });
 	}
 
 	init();
@@ -50,9 +59,10 @@ $(function(){
 	});
 
 
-	$(document).on('scroll', function(){
+	$(window).on('scroll', function(){
 		// console.log($(this).scrollTop());
 		var scrollTop = $(this).scrollTop();
+		
 		if(scrollTop >= headerHeight){
 			$('nav').addClass('fixed');
 			$('.grid').css('top', '2em');
@@ -62,6 +72,18 @@ $(function(){
 				$('.grid').css('top', '0');
 			}
 		}
+
+		if(scrollTop > scroll){
+			console.log('scrolling down');
+			yMult-=0.0005;
+			// xMult+=0.01;
+		} else {
+			console.log('scrolling-up');
+			yMult+=0.0005;
+			// xMult-=0.01;
+		}
+		$('.box-ends').css({transform: 'translateY('+(imgWidth*yMult)+'px) translateX('+(imgWidth*xMult)+'px) rotate('+deg+'deg)'});
+		scroll = scrollTop;
 	});
 
 	$('.scroll-arrow').click(function() {
@@ -80,5 +102,22 @@ $(function(){
 	});
 
 });
+
+function toggleBoldness(bold){
+	while(bold<3){
+		bold+=1;
+	}
+
+	return bold;
+}
+
+function rotate(count, array){
+	if(count < array.length-1){
+		count++;
+	} else {
+		count = 0;
+	}
+	return count;
+}
 
 
