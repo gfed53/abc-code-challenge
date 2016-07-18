@@ -54,8 +54,10 @@ ul, p {
 @media screen and (min-width: 1024px) {
   h1 {
     font-size: 2em; }
-  ul, p {
-    font-size: 1em; } }
+  ul {
+    font-size: 1em; }
+  p {
+    font-size: 0.7em; } }
 
 header {
   position: relative;
@@ -120,16 +122,23 @@ nav {
 
 footer {
   padding: 1em;
-  background-color: #103b58; }
+  background-color: #103b58;
+  background: linear-gradient(rgba(0, 0, 0, 0.87), rgba(20, 26, 105, 0.82)), no-repeat center center fixed;
+  background-size: cover; }
   footer h3, footer a {
     color: white; }
+  footer a {
+    transition: 500ms linear all;
+    padding: 0 2em; }
+  footer a:hover {
+    color: #ada6a6; }
   footer #footer-links {
     padding: 0;
     margin-bottom: 0;
     list-style-type: none; }
     footer #footer-links li {
       display: inline-block;
-      margin: 1em 2em; }
+      margin: 1em 0; }
 
 button {
   background-color: transparent;

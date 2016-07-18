@@ -82,13 +82,11 @@ $(function(){
 
 		//Parallax scrolling for the diagonal lines
 		if(scrollTop > scroll){
-			console.log('scrolling down');
 			line1YMult-=0.0003;
 			line2YMult-=0.0003;
 			line1XMult+=0.0001;
 			line2XMult+=0.0001;
 		} else {
-			console.log('scrolling-up');
 			line1YMult+=0.0003;
 			line2YMult+=0.0003;
 			line1XMult-=0.0001;
