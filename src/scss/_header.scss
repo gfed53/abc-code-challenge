@@ -1,9 +1,7 @@
 header {
 	position: relative;
 	background: linear-gradient(rgba(56, 48, 23, 0.6), rgba(20, 26, 105, 0.82)), url("../images/image1.jpg") no-repeat center center fixed;
-	// background: linear-gradient(rgba(56, 48, 23, 0.6), rgba(20, 26, 105, 0.82)) no-repeat center center fixed;
 	background-size: cover;
-	// height: 37em;
 	color: white;
 	.header-content {
 		max-width: 58%;
@@ -16,8 +14,6 @@ header {
 	header {
 		.header-content {
 			max-width: 50%;
-			// float: right;
-			// margin-top: 15em;
 		}
 	}
 }
