@@ -1,6 +1,17 @@
 footer {
+	// margin: 1em;
+	padding: 1em;
+	background-color: #103b58;
+	h3, a {
+		color: white;
+	}
 	#footer-links {
 		padding: 0;
+		margin-bottom: 0;
 		list-style-type: none;
+		li {
+			display: inline-block;
+			margin: 1em 2em;
+		}
 	}
 }

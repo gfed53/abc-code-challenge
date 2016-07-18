@@ -34,6 +34,15 @@ ul, p {
 	font-size: 0.5em;
 }
 
+@media screen and ($mobile0_5){
+	h3 {
+		font-size: 1em;
+	}
+	ul {
+		font-size: 0.8em;
+	}
+}
+
 @media screen and ($mobile1){
 	h1 {
 		font-size: 1.4em;
@@ -55,8 +64,9 @@ ul, p {
 	h1 {
 		font-size: 2em;
 	}
+	
 	ul, p {
-		font-size: 0.7em;
+		font-size: 1em;
 	}
 }
 
