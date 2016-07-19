@@ -36,7 +36,16 @@
 		transition: 500ms linear all;
 	}
 	.scroll-arrow:hover {
-		font-size: 1.5em;
+		font-size: 2em;
+		font-weight: bold;
+	}
+}
+
+@media screen and ($tablet1){
+	.arrow-container {
+		.scroll-arrow {
+			font-size: 1.5em;
+		}
 	}
 }
 

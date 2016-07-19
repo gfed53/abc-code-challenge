@@ -5,6 +5,7 @@ button {
 	font-size: 0.1em;
 	color: white;
 	border: 1.8px solid white;
+	padding: 0.7em;
 	transition: 500ms linear all;
 }
 
@@ -17,5 +18,12 @@ button:hover {
 	button {
 		font-size: 0.6em;
 		padding: 0.7em 2em;
+	}
+}
+
+@media screen and ($tablet1){
+	button {
+		font-size: 0.6em;
+		padding: 1.2em 2.5em;
 	}
 }

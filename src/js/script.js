@@ -22,14 +22,11 @@ $(function(){
 		headerHeight = $('header').height();
 		navHeight = $('nav').height();
 		headerHeight = $(window).height()-navHeight;
-		// console.log($(window).height());
 		if($(window).height() <= 372){
 			marginTop = (headerHeight)/4;
 		} else {
 			marginTop = (headerHeight)/3;
 		}
-
-		// marginTop = (headerHeight/2.5);
 
 		$('header').height(headerHeight);
 		$('.header-content').css('margin-top', marginTop+'px');
