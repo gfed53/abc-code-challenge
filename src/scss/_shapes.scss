@@ -1,22 +1,7 @@
-.box-ends {
-	width: 79%;
-    height: 25%;
-    border-left: 1px solid #103b58;
-    border-right: 1px solid #103b58;
-    transform:
-        translateY(43%)
-        translateX(8%)
-        rotate(-19deg); 
-    transform-origin: 0% 0%;
-    position: absolute;
-    z-index: 999;
-}
-
 .line1 {
 	width: 79%;
     height: 25%;
     border-left: 1px solid #103b58;
-    // border-right: 1px solid #103b58;
     transform:
         translateY(43%)
         translateX(8%)
@@ -29,7 +14,6 @@
 .line2 {
 	width: 79%;
     height: 25%;
-    // border-left: 1px solid #103b58;
     border-right: 1px solid #103b58;
     transform:
         translateY(43%)
