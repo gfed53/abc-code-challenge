@@ -15,6 +15,18 @@ $(function(){
 	line2YMult = 0.320,
 	line2XMult = 0.09,
 	scroll = $(window).scrollTop();
+
+	//Parallax
+	$('.bg-container').fallings({
+		velocity: .2,
+		initialPosition: 0,
+		bgParallax: true,
+		bgPercent: "50%",
+		onClass: "fallings-visible",
+		offClass: "fallings-invisible"
+	});
+
+	
 	
 	function init(){
 
