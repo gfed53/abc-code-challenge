@@ -66,7 +66,7 @@ header {
     position: relative !important;
     background: url("../images/image1.jpg") no-repeat;
     background-position: 100%;
-    background-size: 100% 200%;
+    background-size: 200% 120%;
     width: 100%;
     min-height: 100%; }
   header .tint:after {
@@ -91,11 +91,15 @@ header {
 
 @media screen and (min-width: 550px) {
   header .header-content {
-    max-width: 39%; } }
+    max-width: 39%; }
+  header .bg-container {
+    background-size: 100% 120%; } }
 
 @media screen and (min-width: 750px) {
   header .header-content {
-    max-width: 35%; } }
+    max-width: 35%; }
+  header .bg-container {
+    background-size: cover; } }
 
 @media screen and (min-width: 1024px) {
   header .header-content {
